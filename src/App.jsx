@@ -1,10 +1,13 @@
-import Header from './components/Header'
+import Header from "./components/Header"
+import Entry from "./components/Entry"
 
-function App() {
-
+export default function App() {
   return (
-    <Header />
+    <>
+      <Header />
+      <main className="container">
+        <Entry />
+      </main>
+    </>
   )
 }
-
-export default App
