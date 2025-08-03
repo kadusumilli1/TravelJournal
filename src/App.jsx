@@ -5,6 +5,7 @@ import entries from "./data"
 export default function App() {
   const entryElements = entries.map((entry) => 
     <Entry
+      key={entry.id}
       img={{
         src: entry.img.src,
         alt: entry.img.alt
